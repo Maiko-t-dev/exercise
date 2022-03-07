@@ -1,0 +1,12 @@
+name: sample2-github-actions
+on: [push]
+jobs:
+  check-version:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "this is a pen"
+      - uses: actions/checkout@v2
+      - run: |
+          ls -al
+          cd .github/workflows/
+          ls -al
